@@ -18,11 +18,11 @@ public class ConditionExpression extends Expression {
         return super.hashCode(); //To change body of generated methods, choose Tools | Templates.
     }
 
-    ConditionExpression(String cond) {
+    public ConditionExpression(String cond) {
         setExpressionStr(cond);
     }
 
-    ConditionExpression() {
+    public ConditionExpression() {
     }
     
 }

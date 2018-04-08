@@ -6,20 +6,15 @@
 package com.icraus.vpl.codegenerator;
 
 
-public class SimpleCodeBlockHead implements CodeBlockHead {
+public class SimpleStatement extends Statement {
 
-    private String head;
-    public SimpleCodeBlockHead(String _head){
-        head  = _head;
-    }
-    @Override
-    public String getStatementTemplate() {
-        return "";
+    public SimpleStatement(String st) {
+        super(st);
     }
 
     @Override
     public String toText() throws ErrorGenerateCodeException {
-        return head;
+        return getStatementString();
     }
     
 }

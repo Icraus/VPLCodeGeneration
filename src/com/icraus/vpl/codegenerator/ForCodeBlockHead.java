@@ -59,9 +59,10 @@ public class ForCodeBlockHead implements CodeBlockHead {
         return declareExpression;
     }
 
-    void setPostItrExpression(OperationExpression op) {
+    public void setPostItrExpression(OperationExpression op) {
         this.postItrExpression = op;
     }
+    
 
     public OperationExpression getPostItrExpression() {
         return postItrExpression;

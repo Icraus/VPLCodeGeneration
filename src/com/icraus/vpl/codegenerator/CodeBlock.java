@@ -5,15 +5,12 @@
  */
 package com.icraus.vpl.codegenerator;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
  * @author Shoka
  */
 public class CodeBlock extends Statement {
-
+    
     public static final String HEAD_STAT = "$$HEAD_STAT";
     public static final String BODY_STAT = "$$BODY_STAT";
     public static final String CODE_BLOCK_TEMPLATE
@@ -26,7 +23,7 @@ public class CodeBlock extends Statement {
 
     private CodeBlockHead head = null;
     private CodeBlockBody body = null;
-
+//TODO    private CodeBlockImports imports = null;
     public CodeBlockHead getHead() {
         return head;
     }

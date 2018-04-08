@@ -24,4 +24,8 @@ public class GrammerConstants {
     public static final String STAT_CLASS = "$$CLASS_STAT";
     public static final String STAT_EXTEND_WORD = "$$EXTENDS_WRD";
     public static final String STAT_IMPLEMENTS_WORD = "$$IMPLEMENTS_WRD";
+    public static final String STAT_INPUT_OP = "$$INPUT_STATMENT";
+    public static final String STAT_OUTPUT_OP = "$$OUTPUT_STATMENT";
+    public static final String OP_COMMENT_START = "$$COMMENT_START";
+    public static final String OP_COMMENT_END = "$$COMMENT_END";
 }
