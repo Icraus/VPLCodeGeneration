@@ -5,6 +5,8 @@
  */
 package com.icraus.vpl.codegenerator;
 
+import java.util.List;
+
 /**
  *
  * @author Shoka
@@ -39,7 +41,26 @@ public class CodeBlock extends Statement {
     public void setBody(CodeBlockBody body) {
         this.body = body;
     }
-
+    
+    public static CodeBlock createCodeBlock(CodeBlockHead head){
+        CodeBlock b = new CodeBlock();
+        b.setBody(new CodeBlockBody());
+        b.setHead(head);
+        return b;
+    }
+    public static CodeBlock createClassCodeBlock(String name, String packageName, String access){
+       
+        ClassCodeBlockHead h = new ClassCodeBlockHead();
+        h.setClassName(name);
+        h.setPackageName(packageName);
+        h.setAccessType(access);
+        return createCodeBlock(h);
+    }
+    public static CodeBlock createMethodCodeBlock(String name, String returnS, String access){
+       
+        MethodCodeBlockHead h = new MethodCodeBlockHead(name, returnS, access);
+        return createCodeBlock(h);
+    }
     @Override
     public String toText() throws ErrorGenerateCodeException {
         String res = CODE_BLOCK_TEMPLATE;

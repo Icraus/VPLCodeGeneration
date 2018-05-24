@@ -42,14 +42,11 @@
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/CodeBlockImportsImpl.java</file>
         </group>
         <group name="Graduation_Project">
-            <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/test/com/icraus/vpl/codegenerator/CodeBlockTest.java</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/CodeBlockImports.java</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/SimpleStatement.java</file>
-            <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/test/com/icraus/vpl/codegenerator/IfCodeBlockHeadTest.java</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/parsers/JavaGrammar.properties</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/MethodCodeBlockHead.java</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/CodeBlockHead.java</file>
-            <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/test/com/icraus/vpl/codegenerator/CodeBlockBodyTest.java</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/IfCodeBlockHead.java</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/DeclareExpressionBuilder.java</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/DeclareExpression.java</file>
@@ -64,7 +61,6 @@
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/Statement.java</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/ForCodeBlockHead.java</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/test/com/icraus/vpl/codegenerator/parsers/JavaCodeGeneratorTest.java</file>
-            <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/test/com/icraus/vpl/codegenerator/MultipleCodeBlockTest.java</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/test/com/icraus/vpl/codegenerator/TestFunctions.java</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/ErrorGenerateCodeException.java</file>
             <file>file:/F:/Important/Code/Graduation_Project/VPLCodeGeneration/src/com/icraus/vpl/codegenerator/CodeBlock.java</file>

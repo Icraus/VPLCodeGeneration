@@ -28,4 +28,5 @@ public class GrammerConstants {
     public static final String STAT_OUTPUT_OP = "$$OUTPUT_STATMENT";
     public static final String OP_COMMENT_START = "$$COMMENT_START";
     public static final String OP_COMMENT_END = "$$COMMENT_END";
+    public static final String STAT_PACKAGE = "$$PACKAGE_WRD";
 }

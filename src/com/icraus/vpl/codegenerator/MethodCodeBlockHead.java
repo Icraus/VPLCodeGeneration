@@ -11,8 +11,10 @@ import java.util.List;
 
 public class MethodCodeBlockHead implements CodeBlockHead {
 
-    private String methodName;
-    private String returnType;
+    private String methodName = "";
+    private String returnType = "";
+    
+    private String accessType = "";
     private List<DeclareExpression> parameters = new ArrayList<>();
 
     public List<DeclareExpression> getParameters() {
@@ -25,7 +27,11 @@ public class MethodCodeBlockHead implements CodeBlockHead {
     public static final String RETURN_TYPE = "$$RETURN_TYPE";
     public static final String METHOD_NAME = "$$METHOD_NAME";
     public static final String PARAMETERS = "$$PARAMETERS";
-    public static final String METHOD_TEMPLATE = RETURN_TYPE
+    public static final String ACCESS_TYPE = "$$ACCESS";
+    public static final String METHOD_TEMPLATE 
+            = ACCESS_TYPE 
+            + " " 
+            + RETURN_TYPE
             + " "
             + METHOD_NAME
             + GrammerConstants.OP_PARAN_START
@@ -59,8 +65,14 @@ public class MethodCodeBlockHead implements CodeBlockHead {
     public MethodCodeBlockHead(String methodName, String returnType) {
         this.methodName = methodName;
         this.returnType = returnType;
+        accessType = "";
     }
     
+    public MethodCodeBlockHead(String methodName, String returnType, String access) {
+        this.methodName = methodName;
+        this.returnType = returnType;
+        this.accessType = access;
+    }   
     
     @Override
     public String getStatementTemplate() {
@@ -77,11 +89,21 @@ public class MethodCodeBlockHead implements CodeBlockHead {
     public String toText() throws ErrorGenerateCodeException {
         
         String res = getStatementTemplate();
+        
         String params = String.join(", ", toParamStringHelper(parameters));
         res = res.replace(PARAMETERS, params);
+        res = res.replace(ACCESS_TYPE, getAccessType());
         res = res.replace(METHOD_NAME, methodName);
         res = res.replace(RETURN_TYPE, returnType);
         return res;
+    }
+
+    public String getAccessType() {
+        return accessType;
+    }
+
+    public void setAccessType(String accessType) {
+        this.accessType = accessType;
     }
 
     

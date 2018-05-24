@@ -5,11 +5,17 @@
  */
 package com.icraus.vpl.codegenerator.parsers;
 
+import com.icraus.vpl.codegenerator.ClassCodeBlockHead;
+import com.icraus.vpl.codegenerator.CodeBlock;
+import com.icraus.vpl.codegenerator.CodeBlockBody;
+import com.icraus.vpl.codegenerator.ErrorGenerateCodeException;
 import com.icraus.vpl.codegenerator.GrammerConstants;
+import com.icraus.vpl.codegenerator.SimpleStatement;
 import com.icraus.vpl.codegenerator.TestHelpers;
-import com.icraus.vpl.codegenerator.parsers.JavaCodeGenerator;
-import java.util.Map;
+import java.util.ArrayList;
 import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -96,5 +102,24 @@ public class JavaCodeGeneratorTest {
         assertEquals(result, expected);
         TestHelpers.printFooter();
     }
-
+    @Test
+    public void testClassCodeGeneration() {
+        CodeBlock b = new CodeBlock();
+        b.setBody(new CodeBlockBody());
+        b.getBody().getChildren().add(new SimpleStatement("while(1);"));
+        ClassCodeBlockHead h = new ClassCodeBlockHead();
+        h.setClassName("SS");
+        h.setPackageName("Package");
+        h.setInterfaceNames(new ArrayList<>());
+        h.setParentClass("");
+        b.setHead(h);
+        h.setAccessType("public");
+        try {
+            String txt = b.toText();
+            JavaCodeGenerator c = new JavaCodeGenerator();
+            c.generateClass("C:/1", h.getClassName(), txt);
+        } catch (ErrorGenerateCodeException ex) {
+            Logger.getLogger(JavaCodeGeneratorTest.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }

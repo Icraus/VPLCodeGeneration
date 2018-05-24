@@ -9,6 +9,7 @@ package com.icraus.vpl.codegenerator;
  *
  * @author Shoka
  */
+@FunctionalInterface
 public interface CodeGenerator {
     
     public String toText() throws ErrorGenerateCodeException;
