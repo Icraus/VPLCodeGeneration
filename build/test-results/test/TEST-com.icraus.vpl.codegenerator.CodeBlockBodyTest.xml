@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.icraus.vpl.codegenerator.CodeBlockBodyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-24T19:54:13" hostname="DESKTOP-3A9PN66" time="0.003">
+  <properties/>
+  <testcase name="testToText" classname="com.icraus.vpl.codegenerator.CodeBlockBodyTest" time="0.003"/>
+  <system-out><![CDATA[expected-------------------
+String s = \"Hello World\"$$END_LINE_OP
+int xx = 5$$END_LINE_OP
+x == 20$$END_LINE_OP
+
+Result-------------------
+String s = \"Hello World\"$$END_LINE_OP
+int xx = 5$$END_LINE_OP
+x == 20$$END_LINE_OP
+
+CodeBlockBodyTest :: testToText = true
+------------- ---------------- ---------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

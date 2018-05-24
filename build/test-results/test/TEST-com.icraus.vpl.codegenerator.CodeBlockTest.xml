@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.icraus.vpl.codegenerator.CodeBlockTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-24T19:54:13" hostname="DESKTOP-3A9PN66" time="0.004">
+  <properties/>
+  <testcase name="testToText" classname="com.icraus.vpl.codegenerator.CodeBlockTest" time="0.004"/>
+  <system-out><![CDATA[expected-------------------
+$$WHILE_STAT$$PARAN_START_OPx == 10$$PARAN_END_OP$$BLOCK_START_OP
+String v = "hello world"$$END_LINE_OP
+int i = 0$$END_LINE_OP
+$$FOR_STAT$$PARAN_START_OPi = 0$$END_LINE_OP i < 10$$END_LINE_OP ++i$$PARAN_END_OP$$BLOCK_START_OP
+$$IF_STAT$$PARAN_START_OPi == 30$$PARAN_END_OP$$BLOCK_START_OP
+String g = "AA"$$END_LINE_OP
+$$BLOCK_END_OP
+$$BLOCK_END_OP
+$$BLOCK_END_OP
+Result-------------------
+$$WHILE_STAT$$PARAN_START_OPx == 10$$PARAN_END_OP$$BLOCK_START_OP
+String v = "hello world"$$END_LINE_OP
+int i = 0$$END_LINE_OP
+$$FOR_STAT$$PARAN_START_OPi = 0$$END_LINE_OP i < 10$$END_LINE_OP ++i$$PARAN_END_OP$$BLOCK_START_OP
+$$IF_STAT$$PARAN_START_OPi == 30$$PARAN_END_OP$$BLOCK_START_OP
+String g = "AA"$$END_LINE_OP
+$$BLOCK_END_OP
+$$BLOCK_END_OP
+$$BLOCK_END_OP
+CodeBlockTest :: testToText = true
+------------- ---------------- ---------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.icraus.vpl.codegenerator.DeclareExpressionBuilderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-24T19:54:13" hostname="DESKTOP-3A9PN66" time="0.005">
+  <properties/>
+  <testcase name="testObjectDeclareExp" classname="com.icraus.vpl.codegenerator.DeclareExpressionBuilderTest" time="0.002"/>
+  <testcase name="testDeclareExpression" classname="com.icraus.vpl.codegenerator.DeclareExpressionBuilderTest" time="0.001"/>
+  <testcase name="testNoAssignment" classname="com.icraus.vpl.codegenerator.DeclareExpressionBuilderTest" time="0.001"/>
+  <system-out><![CDATA[expected-------------------
+Widget i = new Widget()
+Result-------------------
+Widget i = new Widget()
+testObjectDeclareExp = true
+------------- ---------------- ---------------
+expected-------------------
+int i = 0
+Result-------------------
+int i = 0
+testDeclareExpression = true
+------------- ---------------- ---------------
+expected-------------------
+Widget i
+Result-------------------
+Widget i
+testNoAssignment = true
+------------- ---------------- ---------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
