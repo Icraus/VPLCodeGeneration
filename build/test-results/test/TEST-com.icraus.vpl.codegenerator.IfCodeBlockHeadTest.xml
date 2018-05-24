@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.icraus.vpl.codegenerator.IfCodeBlockHeadTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-24T19:54:13" hostname="DESKTOP-3A9PN66" time="0.006">
+  <properties/>
+  <testcase name="testToText" classname="com.icraus.vpl.codegenerator.IfCodeBlockHeadTest" time="0.006"/>
+  <system-out><![CDATA[if(x == 10)
+expected-------------------
+$$IF_STAT$$PARAN_START_OPx == 10$$PARAN_END_OP
+Result-------------------
+$$IF_STAT$$PARAN_START_OPx == 10$$PARAN_END_OP
+IfCodeBlockHeadTest :: testToText = true
+------------- ---------------- ---------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

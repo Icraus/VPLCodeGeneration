@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.icraus.vpl.codegenerator.MultipleCodeBlockTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-24T19:54:13" hostname="DESKTOP-3A9PN66" time="0.009">
+  <properties/>
+  <testcase name="testToText" classname="com.icraus.vpl.codegenerator.MultipleCodeBlockTest" time="0.009"/>
+  <system-out><![CDATA[expected-------------------
+$$IF_STAT$$PARAN_START_OPx == 10$$PARAN_END_OP$$BLOCK_START_OP
+String s = "A"$$END_LINE_OP
+$$BLOCK_END_OP$$IF_STAT$$PARAN_START_OPx == 30$$PARAN_END_OP$$BLOCK_START_OP
+String s = "B"$$END_LINE_OP
+$$BLOCK_END_OP$$IF_STAT$$PARAN_START_OPx == 0$$PARAN_END_OP$$BLOCK_START_OP
+String s = "C"$$END_LINE_OP
+$$BLOCK_END_OP
+Result-------------------
+$$IF_STAT$$PARAN_START_OPx == 10$$PARAN_END_OP$$BLOCK_START_OP
+String s = "A"$$END_LINE_OP
+$$BLOCK_END_OP$$IF_STAT$$PARAN_START_OPx == 30$$PARAN_END_OP$$BLOCK_START_OP
+String s = "B"$$END_LINE_OP
+$$BLOCK_END_OP$$IF_STAT$$PARAN_START_OPx == 0$$PARAN_END_OP$$BLOCK_START_OP
+String s = "C"$$END_LINE_OP
+$$BLOCK_END_OP
+MultipleCodeBlockTest :: testToText = true
+------------- ---------------- ---------------
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
