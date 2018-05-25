@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.icraus.vpl.codegenerator.BasicCodeBlockImportsImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-24T19:54:13" hostname="DESKTOP-3A9PN66" time="0.009">
+<testsuite name="com.icraus.vpl.codegenerator.BasicCodeBlockImportsImplTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-24T22:47:51" hostname="DESKTOP-3A9PN66" time="0.107">
   <properties/>
-  <testcase name="testMutliplePackages" classname="com.icraus.vpl.codegenerator.BasicCodeBlockImportsImplTest" time="0.006"/>
+  <testcase name="testToText" classname="com.icraus.vpl.codegenerator.BasicCodeBlockImportsImplTest" time="0.103"/>
+  <testcase name="testMutliplePackages" classname="com.icraus.vpl.codegenerator.BasicCodeBlockImportsImplTest" time="0.001"/>
   <testcase name="testMutlipleIncludes" classname="com.icraus.vpl.codegenerator.BasicCodeBlockImportsImplTest" time="0.001"/>
-  <testcase name="testToText" classname="com.icraus.vpl.codegenerator.BasicCodeBlockImportsImplTest" time="0.0"/>
   <system-out><![CDATA[expected-------------------
+$$IMPORT_STAT package $$END_LINE_OP
+Result-------------------
+$$IMPORT_STAT package $$END_LINE_OP
+BasicCodeBlockImportsImplTest :: testToText = true
+------------- ---------------- ---------------
+expected-------------------
 $$IMPORT_STAT package $$END_LINE_OP
 $$IMPORT_STAT com.widget.Icraus $$END_LINE_OP
 $$IMPORT_STAT com.class.Sun $$END_LINE_OP
@@ -27,12 +33,6 @@ $$IMPORT_STAT <myName> $$END_LINE_OP
 $$IMPORT_STAT <solongSucker.h> $$END_LINE_OP
 $$IMPORT_STAT <package> $$END_LINE_OP
 BasicCodeBlockImportsImplTest :: testMutlipleIncludes = true
-------------- ---------------- ---------------
-expected-------------------
-$$IMPORT_STAT package $$END_LINE_OP
-Result-------------------
-$$IMPORT_STAT package $$END_LINE_OP
-BasicCodeBlockImportsImplTest :: testToText = true
 ------------- ---------------- ---------------
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

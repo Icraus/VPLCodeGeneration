@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.icraus.vpl.codegenerator.parsers.JavaCodeGeneratorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-24T19:54:13" hostname="DESKTOP-3A9PN66" time="0.041">
+<testsuite name="com.icraus.vpl.codegenerator.parsers.JavaCodeGeneratorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-05-24T22:47:52" hostname="DESKTOP-3A9PN66" time="0.05">
   <properties/>
-  <testcase name="testClassCodeGeneration" classname="com.icraus.vpl.codegenerator.parsers.JavaCodeGeneratorTest" time="0.035"/>
+  <testcase name="testClassCodeGeneration" classname="com.icraus.vpl.codegenerator.parsers.JavaCodeGeneratorTest" time="0.045"/>
   <testcase name="testLoad" classname="com.icraus.vpl.codegenerator.parsers.JavaCodeGeneratorTest" time="0.002"/>
   <testcase name="testGenerateCode" classname="com.icraus.vpl.codegenerator.parsers.JavaCodeGeneratorTest" time="0.003"/>
   <system-out><![CDATA[expected-------------------
@@ -25,7 +25,7 @@ i++;
 JavaCodeGeneratorTest :: testGenerateCode = true
 ------------- ---------------- ---------------
 ]]></system-out>
-  <system-err><![CDATA[May 24, 2018 9:54:13 PM com.icraus.vpl.codegenerator.parsers.JavaCodeGenerator generateClass
+  <system-err><![CDATA[May 25, 2018 12:47:52 AM com.icraus.vpl.codegenerator.parsers.JavaCodeGenerator generateClass
 SEVERE: null
 java.io.FileNotFoundException: C:\1\SS.java (The system cannot find the path specified)
 	at java.io.FileOutputStream.open0(Native Method)
@@ -86,7 +86,7 @@ java.io.FileNotFoundException: C:\1\SS.java (The system cannot find the path spe
 	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
 	at java.lang.Thread.run(Thread.java:745)
 
-May 24, 2018 9:54:13 PM com.icraus.vpl.codegenerator.parsers.JavaCodeGeneratorTest testClassCodeGeneration
+May 25, 2018 12:47:52 AM com.icraus.vpl.codegenerator.parsers.JavaCodeGeneratorTest testClassCodeGeneration
 SEVERE: null
 com.icraus.vpl.codegenerator.ErrorGenerateCodeException: Error Code Generation
 	at com.icraus.vpl.codegenerator.parsers.JavaCodeGenerator.generateClass(JavaCodeGenerator.java:75)

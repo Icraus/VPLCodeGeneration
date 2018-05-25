@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.icraus.vpl.codegenerator.TestFunctions" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-24T19:54:13" hostname="DESKTOP-3A9PN66" time="0.0">
+<testsuite name="com.icraus.vpl.codegenerator.TestFunctions" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-24T22:47:52" hostname="DESKTOP-3A9PN66" time="0.0">
   <properties/>
   <testcase name="hello" classname="com.icraus.vpl.codegenerator.TestFunctions" time="0.0"/>
   <system-out><![CDATA[]]></system-out>

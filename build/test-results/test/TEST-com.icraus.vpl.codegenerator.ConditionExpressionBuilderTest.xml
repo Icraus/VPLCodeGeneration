@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-24T19:54:13" hostname="DESKTOP-3A9PN66" time="0.005">
+<testsuite name="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2018-05-24T22:47:52" hostname="DESKTOP-3A9PN66" time="0.006">
   <properties/>
-  <testcase name="testBuildConditionList" classname="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" time="0.002"/>
-  <testcase name="testConditionExpression" classname="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" time="0.001"/>
-  <testcase name="testAppendAndCondition" classname="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" time="0.001"/>
-  <testcase name="testAppendConditionType" classname="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" time="0.0"/>
-  <testcase name="testAppendOrCondition" classname="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" time="0.0"/>
   <testcase name="testBuildExpression" classname="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" time="0.0"/>
+  <testcase name="testAppendConditionType" classname="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" time="0.002"/>
+  <testcase name="testBuildConditionList" classname="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" time="0.0"/>
+  <testcase name="testConditionExpression" classname="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" time="0.0"/>
+  <testcase name="testAppendOrCondition" classname="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" time="0.001"/>
+  <testcase name="testAppendAndCondition" classname="com.icraus.vpl.codegenerator.ConditionExpressionBuilderTest" time="0.001"/>
   <system-out><![CDATA[expected-------------------
+i < 5 && i < 5 || i < 5 && b < 10 || c == 20
+Result-------------------
+i < 5 && i < 5 || i < 5 && b < 10 || c == 20
+expected-------------------
 i < 5 && b < 10 || c == 20
 Result-------------------
 i < 5 && b < 10 || c == 20
@@ -15,13 +19,9 @@ ConditionExpressionBuilderTest :: testBuildConditionList = true
 ------------- ---------------- ---------------
 ConditionExpressionBuilderTest :: testConditionExpression = true
 ------------- ---------------- ---------------
-ConditionExpressionBuilderTest :: testAppendAndCondition = true
-------------- ---------------- ---------------
-expected-------------------
-i < 5 && i < 5 || i < 5 && b < 10 || c == 20
-Result-------------------
-i < 5 && i < 5 || i < 5 && b < 10 || c == 20
 ConditionExpressionBuilderTest :: testAppendOrCondition = true
+------------- ---------------- ---------------
+ConditionExpressionBuilderTest :: testAppendAndCondition = true
 ------------- ---------------- ---------------
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

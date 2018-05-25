@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.icraus.vpl.codegenerator.CodeBlockBodyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-24T19:54:13" hostname="DESKTOP-3A9PN66" time="0.003">
+<testsuite name="com.icraus.vpl.codegenerator.CodeBlockBodyTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-05-24T22:47:52" hostname="DESKTOP-3A9PN66" time="0.004">
   <properties/>
-  <testcase name="testToText" classname="com.icraus.vpl.codegenerator.CodeBlockBodyTest" time="0.003"/>
+  <testcase name="testToText" classname="com.icraus.vpl.codegenerator.CodeBlockBodyTest" time="0.004"/>
   <system-out><![CDATA[expected-------------------
 String s = \"Hello World\"$$END_LINE_OP
 int xx = 5$$END_LINE_OP
